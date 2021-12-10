@@ -24,13 +24,13 @@ public class Q01 {
 		
 		int sayac=0;
 		int sayac1=0;
-		char crc='b';
+		char crc='x';
 
 		for (int i = 0; i < str.length()-1; i++) {
 			
 			sayac1=0;
 			
-			for (int j = 0; j < str.length()-1 ; j++) {
+			for (int j = 1; j < str.length() ; j++) {
 				
 				if (str.toLowerCase().charAt(i) == str.toLowerCase().charAt(j)) {
 					sayac1++;

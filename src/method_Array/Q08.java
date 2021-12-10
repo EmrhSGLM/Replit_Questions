@@ -19,7 +19,7 @@ public class Q08 {
 		int input1[] = { 1, 2, 3, 4 };
 		int input2[] = { 5, 6 };
 		
-		int yeniArray[] = new int[6];
+		int yeniArray[] = new int[input1.length+input2.length];
 		
 
 		for (int i = 0; i < input1.length; i++) {

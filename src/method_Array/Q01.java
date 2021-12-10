@@ -39,6 +39,7 @@ public class Q01 {
 
 		
 		System.out.println("Reverse of number that  enter : " + tersiniYaz(num));
+		scan.close();
 
 	}
 
@@ -47,6 +48,7 @@ public class Q01 {
 		for (int i = num.length() - 1; i >= 0; i--) {
 			ters += num.substring(i, i + 1);
 		}
+		
 
 		return ters;
 	}

@@ -22,8 +22,14 @@ public class Q01 {
 		System.out.println("Please enter a sentence");
 		String str=scan.nextLine();
 		
-		StringBuilder sb=new StringBuilder(str);
+		StringBuilder sb=new StringBuilder(str);		
 		System.out.print("Reverse of sentence that enter : " + sb.reverse());
+		
+		if (str.equalsIgnoreCase(sb.reverse().toString())) {
+			System.out.println("It is a palindrome");
+		} else {
+			System.out.println("It is not a palindrome");
+		}
 		scan.close();
 
 	}
