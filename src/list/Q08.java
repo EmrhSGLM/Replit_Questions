@@ -33,8 +33,9 @@ public class Q08 {
 
 			for (int j = ters.length() - 1; j >= 0; j--) {
 				kova += ters.substring(j, j + 1);
-				
+				System.out.println(kova);
 			}
+			
 			if (i == 0) {
 				break;
 			}
