@@ -19,7 +19,7 @@ public class Q09 {
 		String cumle = scan.nextLine();
 		int sayac = 0;
 		int sayac1 = 0;
-		char kova = 'Y';
+		char kova='Y';
 
 		for (int i = 0; i < cumle.length(); i++) {
 			sayac=0;
@@ -36,7 +36,11 @@ public class Q09 {
 				kova = cumle.charAt(i);
 				sayac1=sayac;
 			}
+			if (sayac==sayac1) {
+				kova=cumle.charAt(i);
+			}
 		}
+		
 		
 		System.out.println("maximum occurring character is : " +kova);
 		scan.close();

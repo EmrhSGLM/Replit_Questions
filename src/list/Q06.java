@@ -26,7 +26,7 @@ public class Q06 {
 
 			for (int j = 0; j < arr.length; j++) {
 				
-				if (arr1[i].toLowerCase().equals(arr[j].toLowerCase()) ) {
+				if (arr1[i].equalsIgnoreCase(arr[j]) ) {
 					kova.add(arr1[i].toLowerCase());
 				}
 

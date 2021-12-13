@@ -28,7 +28,7 @@ public class Q04 {
 		}
 		
 		for (int i = 0; i < list1.size(); i++) {
-			if (list1.get(i).contains("a") || list1.get(i).contains("A")) {
+			if (list1.get(i).toLowerCase().contains("a")) {
 				list1.remove(i);
 				i--;				
 			}
