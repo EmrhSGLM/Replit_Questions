@@ -15,7 +15,7 @@ public class Q05 {
 
 		for (int i = -50; i <= 0; i++) {
 
-			System.out.print((2 * i * -1) + " ");
+			System.out.print((2 * i * (-1)) + " ");
 		}
 
 	}
