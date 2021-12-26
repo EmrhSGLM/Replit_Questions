@@ -24,15 +24,15 @@ public class Q01 {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Bir isim giriniz ");
-		String cumle = scan.nextLine();
-		//System.out.println("karakter girmek icin ");
-		//char krk=scan.next().charAt(0);
+		String cumle = scan.nextLine().toLowerCase();
+		System.out.println("karakter giriniz ");
+		char krk=scan.next().toLowerCase().charAt(0);
 
 		int krkSayac = 0;
 
-		for (int i = 0; i < cumle.length() - 1; i++) {
+		for (int i = 0; i < cumle.length() ; i++) {
 
-			if (cumle.charAt(i) == 'a') {
+			if (cumle.charAt(i) == krk) {
 				krkSayac++;
 
 			}
