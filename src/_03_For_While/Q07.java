@@ -16,60 +16,36 @@ public class Q07 {
 		 * 
 		 * Any number can be a Java Perfect Number if the sum of its positive divisors
 		 * excluding the number itself is equal to that number.
-		 * 
-		 * Input :6 
-		 * 
-		 * 		 * Output:6 is Perfect Number 
-		 * 
-		 * Input :7
-		 * 
-		 *  Output:7 is not Perfect Number
-		 * 
-		 * Input :
-		 * 
-		 * 6
-		 * 
-		 * Output:
-		 * 
-		 * 6 Mukemmel Sayidir.
-		 * 
-		 * ======================
-		 * 
-		 * Input
-		 * 
-		 * 7
-		 * 
-		 * Output:
-		 * 
-		 * 7 Mukemmel Sayidir degildir.
+		 *		
+		 * Input :7  Output:7 is not Perfect Number(Mukemmel Sayi degildir.)
+		 * 		 
+		 * Input :6  Output:6 is Perfect Number (Mukemmel Sayidir .)
+		 * 		  
 		 */
-
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Bir sayi giriniz:");
-		int sayi = scan.nextInt();
-
-		int toplama = 0;
-
-		for (int i = 1; i < sayi; i++) {
-
-			if (sayi % i == 0) {
-				System.out.print(i + " ");
-				toplama += i;
-
+		
+		Scanner scan=new Scanner (System.in);
+		System.out.println("Lutfen bir sayi giriniz");
+		int sayi=scan.nextInt();
+		
+		int i=1;
+		int toplam=0;
+		while(i < sayi) {
+			
+			if(sayi%i==0) {
+				toplam += i;
 			}
-
+			i++;
 		}
-		System.out.println("");
-		System.out.println("Bolenler toplami :" + toplama);
-
-		if (sayi == toplama) {
-			System.out.println(sayi + " mukemmei bir sayidir");
-
-		} else {
-			System.out.println(sayi + " mukemmel bir sayi degildir");
-
+		System.out.println("Bolenlerin toplam ==> " +toplam);
+		
+		if(sayi == toplam) {
+			System.out.println(sayi+" => Mukemmel bir sayidir");
+		}else {
+			System.out.println(sayi+" => Mukemmel bir sayi degildir");
 		}
-		scan.close();
+		
+
+		
 
 	}
 

@@ -44,12 +44,12 @@ public class Q03 {
 
 			}
 
-		}
-		//System.out.println(tekrarBulma);
+		}		
 		
-		for (int i = 0; i < tekrarBulma.size(); i++) {
-			System.out.print(tekrarBulma.get(i)+" ");
+		for (int i = 0; i < tekrarBulma.size()-1; i++) {
+			System.out.print(tekrarBulma.get(i)+", ");
 		}
+		System.out.print(tekrarBulma.get(tekrarBulma.size()-2));
 		scan.close();
 
 	}

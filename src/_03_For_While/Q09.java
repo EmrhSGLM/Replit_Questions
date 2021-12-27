@@ -21,7 +21,7 @@ public class Q09 {
 		String ters ="";
 		
 		for (int i = sayi.length()-1 ; i >= 0 ; i--) {
-			ters += sayi.substring(i, i+1);
+			ters += sayi.charAt(i);
 						
 		}
 		

@@ -9,66 +9,49 @@ public class Q02 {
 		 * Kullanıcıdan 2 tamsayı girmesini ve ardından GCD (En Büyük Ortak Bölen) ve
 		 * LCM'yi (En Küçük Ortak Kat) bulmasını isteyin.
 		 * 
-		 * Input :
-		 * 
-		 * 30
-		 * 
-		 * 40
-		 * 
+		 * Input : 30      40
+		
 		 * Beklenen Cikti:
 		 * 
-		 * 30 ve 40 icin GCD = 10
-		 * 
-		 * 30 ve 40 icin LCM = 120
+		 * 30 ve 40 icin GCD => 10   	30 ve 40 icin LCM => 120		 
 		 */
-
-		Scanner scan = new Scanner(System.in);
-		System.out.println("2 tamsayi giriniz : ");
-		int a = scan.nextInt();
-		int b = scan.nextInt();
-
-		int kucuk = 0;
-		int buyuk = 0;
-		int lcm = 1;
-		int gcd = 1;
-
-		if (a > b) {
-			buyuk = a;
-			kucuk = b;
-
-		} else if (a < b) {
-			buyuk = b;
-			kucuk = a;
-
-		} else {
-
-			buyuk = a;
-			kucuk = a;
-		}
-
 		
-
-		for (int i = 1; i <= buyuk; i++) {
-
-			if (kucuk % i == 0 && buyuk % i == 0) {
-				kucuk = kucuk / i;
-				buyuk = buyuk / i;
-				gcd *= i;
-
-			}
+		Scanner scan=new Scanner (System.in);
+		System.out.println("Iki tamsayi giriniz");
+		int sayi1=scan.nextInt();
+		int sayi2=scan.nextInt();
+		
+		int buyuk=0;
+		int kucuk=0;
+		
+		if(sayi1>sayi2) {
+			buyuk=sayi1;
+			kucuk=sayi2;
+		}else if(sayi1<sayi2) {
+			buyuk=sayi2;
+			kucuk=sayi1;
+		} else {
+			buyuk=sayi1;
+			kucuk=sayi2;
 		}
+		
+		int ebob=1;
+		int ekok=1;
+		
+		for (int i = 1; i < buyuk; i++) {
 			
-			System.out.println(kucuk);
-			System.out.println(buyuk);
-
+			if(buyuk%i==0 && kucuk%i==0) {
+				buyuk = buyuk/i;
+				kucuk = kucuk/i;
+				ebob *= i;
+			}
 			
-			lcm = kucuk * buyuk * gcd ;
-
-			System.out.println("gcd =" + gcd);
-			System.out.println("lcm =" + lcm);
-			
-			scan.close();
-			
+		}
+		ekok = buyuk * kucuk * ebob ;
+		System.out.println("Ebob => " + ebob);
+		System.out.println("Ekok => "+ ekok);
+		
+		
 
 		}
 
